@@ -6,3 +6,5 @@ checkpoints/
 *.pt
 *.safetensors
 .claude/
+models/
+output_sdctft/
