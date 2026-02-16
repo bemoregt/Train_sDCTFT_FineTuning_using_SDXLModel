@@ -10,6 +10,8 @@ SDXL 모델을 위한 **Selective DCT Fine-Tuning** 구현체입니다.
 sDCTFT는 가중치 행렬에 2D DCT를 적용하고 주파수 도메인의 일부 계수만 학습하는 파라미터 효율적 파인튜닝 방법입니다.
 SDXL UNet 2.57B 파라미터 중 **84,560개(0.003%)** 만 학습하며, 결과물은 kohya 호환 LoRA safetensors로 저장됩니다.
 
+![이미지 스펙트럼 예시](https://github.com/bemoregt/Train_sDCTFT_FineTuning_using_SDXLModel/blob/main/ScrShot%2024.png)
+
 ### 알고리즘 (논문 Algorithm 1)
 
 1. `W ∈ R^{d_out × d_in}`에 2D DCT-II 적용: `W_F = C_out @ W @ C_in.T`
